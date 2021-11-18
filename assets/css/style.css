@@ -73,6 +73,9 @@ header{
 .banner .sliders{
     width: 1000vw;
     height: 100%;
+    animation-name: slideShow;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
 }
 .banner .slide{
     width: 100vw;
@@ -80,6 +83,27 @@ header{
     display: inline-block;
     background-color:rgba(0, 0, 0, 0.8);
 }
+
+@keyframes slideShow{
+        0%{
+            margin-left: 0vw;
+        }
+        10%{
+            margin-left: 0vw;
+        }
+        20%{
+            margin-left: -100vw;
+        }
+        30%{
+            margin-left: -100vw;
+        }
+        40%{
+            margin-left: -200vw;
+        }
+        50%{
+            margin-left: -200vw;
+        }
+}   
 
 .banner .slide--area{
     display: flex;
@@ -102,4 +126,120 @@ header{
 .banner h2{
     text-transform: uppercase;
     margin-top: 10px;
+}
+
+.banner a {
+    display: block;
+    background-color: #b28756;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 600;
+    text-decoration: none;
+    padding: 10px 30px;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+
+.banner .sliders--pointers {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20px;
+    position: absolute;
+    margin-top: -50px;
+}
+
+.banner .pointer{
+    width: 15px;
+    height: 15px;
+    border: 2px solid #b28756;
+    border-radius: 8px;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.banner .pointer.active{
+    background-color: #b28756;
+}
+
+.banner .pointer:nth-child(1){
+    animation-name: pointershow1;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pointershow1{
+    0%{
+        background-color: #b28756;
+    }
+    10%{
+        background-color: #b28756;
+    }
+    20%{
+        background-color: transparent;
+    }
+    30%{
+        background-color: transparent;
+    }
+    40%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: transparent;
+    }
+}
+.banner .pointer:nth-child(2){
+    animation-name: pointershow2;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pointershow2{
+    0%{
+        background-color: transparent;
+    }
+    10%{
+        background-color: transparent;
+    }
+    20%{
+        background-color: #b28756;
+    }
+    30%{
+        background-color: #b28756;
+    }
+    40%{
+        background-color: transparent;
+    }
+    50%{
+        background-color: transparent;
+    }
+}
+.banner .pointer:nth-child(3){
+    animation-name: pointershow3;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes pointershow3{
+    0%{
+        background-color: transparent;
+    }
+    10%{
+        background-color: transparent;
+    }
+    20%{
+        background-color: transparent;
+    }
+    30%{
+        background-color: transparent;
+    }
+    40%{
+        background-color: #b28756;
+    }
+    50%{
+        background-color: #b28756;
+    }
 }
