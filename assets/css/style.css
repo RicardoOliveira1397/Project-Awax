@@ -71,6 +71,7 @@ header{
     overflow: hidden;
 }
 .banner .sliders{
+    display: flex;
     width: 1000vw;
     height: 100%;
     animation-name: slideShow;
@@ -80,7 +81,6 @@ header{
 .banner .slide{
     width: 100vw;
     height: 100%;
-    display: inline-block;
     background-color:rgba(0, 0, 0, 0.8);
 }
 
@@ -118,6 +118,7 @@ header{
     text-transform: uppercase;
     font-weight: bold;
     font-size: 50px;
+    text-align: center;
 }
 
 .banner h1 span{
