@@ -524,3 +524,34 @@ header{
     margin-top: 30px;
 }
 
+/* SECTION CLIENT REVIEWS */
+.testimonials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.section--testimonials--avatar{
+    width: 100px;
+}
+.section-testimonials--name {
+    font-weight: bold;
+    font-size: 16px;
+    margin-top: 20px;
+}
+.section-testimonials--role {
+    font-size: 14px;
+}
+.section-testimonials--quoteimg{
+    width: 20px;
+    margin-top: 30px;
+}
+.section-testimonials--quote{
+    margin-top: 10px;
+    font-size: 13px;
+    max-width: 700px;
+    color: #555;
+    text-align: center;
+    line-height: 25px;
+}
+
